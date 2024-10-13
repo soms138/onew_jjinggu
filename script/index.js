@@ -9,14 +9,16 @@ const mv_slide = new Swiper('#mv_slide',{
 
 // album
 const album_slide = new Swiper('#album_slide',{
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     direction: 'horizontal',
     loop:true,
     spaceBetween: 10,
     breakpoints:{
         400:{slidesPerView:2},
-        500:{slidesPerView:3},
-        600:{slidesPerView:4},
+        500:{slidesPerView:2.5},
+        600:{slidesPerView:3},
+        650:{slidesPerView:3.5},
+        770:{slidesPerView:4},
     }
 })
 
@@ -34,15 +36,14 @@ const official_slide = new Swiper('#video_slide',{
 
 // shorts_slide
 const shorts_slide = new Swiper('#shorts_slide',{
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     direction: 'horizontal',
-    loop:true,
     spaceBetween: 10,
-    slidesOffsetBefore: 10,
-    slidesOffsetAfter: 10,
     breakpoints:{
-        400:{slidesPerView:1.5},
-        500:{slidesPerView:2},
+        350:{slidesPerView:2},
+        450:{slidesPerView:2.5},
+        590:{slidesPerView:3},
+        700:{slidesPerView:3.5},
     }
 })
 
