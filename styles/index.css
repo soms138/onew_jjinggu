@@ -201,9 +201,9 @@ main .shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 179px;
+    max-width: 221px;
     min-width: 148px;
-    height: 300px;
+    height: 380px;
 }
 main .shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide::after {
     content: '';

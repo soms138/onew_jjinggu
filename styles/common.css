@@ -42,9 +42,9 @@ header, footer {
 
 /* popup */
 #popup {
-    width: 35px; height: 35px;
+    width: 45px; height: 45px;
     position: fixed;
-    bottom: 30px; right: 30px;
+    bottom: 20px; right: 20px;
     z-index: 900;
 }
 #popup a {}
