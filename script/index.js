@@ -40,15 +40,16 @@ const official_slide = new Swiper('#video_slide',{
 
 // shorts_slide
 const shorts_slide = new Swiper('#shorts_slide',{
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     direction: 'horizontal',
     spaceBetween: 10,
     slidesOffsetAfter: 10,
     breakpoints:{
-        350:{slidesPerView:2},
-        450:{slidesPerView:2.5},
-        590:{slidesPerView:3},
-        700:{slidesPerView:3.5},
+        345:{slidesPerView:1.5},
+        450:{slidesPerView:2},
+        590:{slidesPerView:2.5},
+        700:{slidesPerView:3},
+        750:{slidesPerView:3.5},
     }
 })
 
