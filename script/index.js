@@ -1,21 +1,21 @@
 // home
-const mv_slide = new Swiper('#mv_slide',{
-    slidesPerView: 1,
-    centeredSlides:true,
-    direction: 'horizontal',
-    loop:true,
-    spaceBetween: 10,
-    scrollbar:{el:'#mv_slide .swiper-scrollbar'},
-})
+// const mv_slide = new Swiper('#mv_slide',{
+//     slidesPerView: 1,
+//     centeredSlides:true,
+//     direction: 'horizontal',
+//     loop:true,
+//     spaceBetween: 10,
+//     scrollbar:{el:'#mv_slide .swiper-scrollbar'},
+// })
 
 // album
 const album_slide = new Swiper('#album_slide',{
     init: true,
     initialSlide: 0,
-    // loopedSlides: 1,
+    loopedSlides: 2,
     slidesPerView: 1.5,
     direction: 'horizontal',
-    // loop:true,
+    loop:true,
     spaceBetween: 10,
     breakpoints:{
         400:{slidesPerView:2},
@@ -42,6 +42,8 @@ const official_slide = new Swiper('#video_slide',{
 const shorts_slide = new Swiper('#shorts_slide',{
     slidesPerView: 1,
     direction: 'horizontal',
+    loop:true,
+    loopedSlides: 2,
     spaceBetween: 10,
     slidesOffsetAfter: 10,
     breakpoints:{
