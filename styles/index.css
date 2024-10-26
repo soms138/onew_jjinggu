@@ -125,8 +125,7 @@ main .album .album_wrap #album_slide .swiper-wrapper .swiper-slide a p {
     position: absolute;
     top: 10px;
     right: 10px;
-    max-width: 20px;
-    min-width: 15px;
+    width: 13px;
     height: auto;
 }
 main .album .album_wrap #album_slide .swiper-wrapper .swiper-slide a p img {
@@ -333,9 +332,15 @@ main .play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_le
 }
 main .play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_right {
     display: block;
-    width: 15px;
+    width: 13px;
 }
 main .play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_right img {width: 100%;}
-main .play_list .tab_contents #play_slide .swiper-wrapper .list .more {}
+main .play_list .tab_contents #play_slide .swiper-wrapper .list .more {
+    display: flex;
+    align-items: center;
+}
 main .play_list .tab_contents #play_slide .swiper-wrapper .list .more span {color: #aaa;}
-main .play_list .tab_contents #play_slide .swiper-wrapper .list .more img {}
+main .play_list .tab_contents #play_slide .swiper-wrapper .list .more img {
+    width: 10px; height: 10px;
+    margin-left: 3px;
+}

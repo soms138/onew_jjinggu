@@ -41,17 +41,23 @@ const official_slide = new Swiper('#video_slide',{
 // shorts_slide
 const shorts_slide = new Swiper('#shorts_slide',{
     slidesPerView: 1,
+    centeredSlides:true,
     direction: 'horizontal',
     loop:true,
     loopedSlides: 2,
     spaceBetween: 10,
     slidesOffsetAfter: 10,
     breakpoints:{
-        345:{slidesPerView:1.5},
-        450:{slidesPerView:2},
-        590:{slidesPerView:2.5},
-        700:{slidesPerView:3},
-        750:{slidesPerView:3.5},
+        345:{slidesPerView:1.5,
+            centeredSlides:false,},
+        450:{slidesPerView:2,
+            centeredSlides:true,},
+        590:{slidesPerView:2.5,
+            centeredSlides:false,},
+        700:{slidesPerView:3,
+            centeredSlides:true,},
+        750:{slidesPerView:3.5,
+            centeredSlides:false,},
     }
 })
 
