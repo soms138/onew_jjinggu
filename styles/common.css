@@ -164,9 +164,9 @@ footer .sns a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-footer .sns a:nth-child(1) {background-image: url(../images/logo/logo_fromm_b.svg);}
-footer .sns a:nth-child(2) {background-image: url(../images/logo/logo_youtube_b.svg);}
-footer .sns a:nth-child(3) {background-image: url(../images/logo/logo_instagram_b.svg);}
-footer .sns a:nth-child(4) {background-image: url(../images/logo/logo_x_b.svg);}
-footer .sns a:nth-child(5) {background-image: url(../images/logo/logo_tiktok_b.svg); margin-right: 0;}
+footer .sns a:nth-child(1) {background-image: url(../images/logo/logo_fromm_b.png);}
+footer .sns a:nth-child(2) {background-image: url(../images/logo/logo_youtube_b.png);}
+footer .sns a:nth-child(3) {background-image: url(../images/logo/logo_instagram_b.png);}
+footer .sns a:nth-child(4) {background-image: url(../images/logo/logo_x_b.png);}
+footer .sns a:nth-child(5) {background-image: url(../images/logo/logo_tiktok_b.png); margin-right: 0;}
 footer p {color: #aaa; text-align: center;}

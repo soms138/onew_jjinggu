@@ -12,7 +12,7 @@
 const album_slide = new Swiper('#album_slide',{
     init: true,
     initialSlide: 0,
-    loopedSlides: 2,
+    loopedSlides: 3,
     slidesPerView: 1.5,
     direction: 'horizontal',
     loop:true,
