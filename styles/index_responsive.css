@@ -1,3 +1,9 @@
 /* @media screen and (max-width:470px){
     .shorts_wrap {padding: 0 20px;}
 } */
+@media screen and (max-width:800px){
+    .swiper-scrollbar {width: calc(100% - 80px / 2) !important;}
+}
+@media screen and (max-width:360px){
+    main .play_list .tab_contents #play_slide .swiper-wrapper .list ul li a {width: calc(100% - 40px); margin-left: 10px;}
+}

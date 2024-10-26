@@ -4,7 +4,7 @@ const mv_slide = new Swiper('#mv_slide',{
     centeredSlides:true,
     direction: 'horizontal',
     loop:true,
-    spaceBetween: 0,
+    spaceBetween: 10,
     scrollbar:{el:'#mv_slide .swiper-scrollbar'},
 })
 
@@ -15,7 +15,7 @@ const album_slide = new Swiper('#album_slide',{
     // loopedSlides: 1,
     slidesPerView: 1.5,
     direction: 'horizontal',
-    loop:true,
+    // loop:true,
     spaceBetween: 10,
     breakpoints:{
         400:{slidesPerView:2},
@@ -54,17 +54,62 @@ const shorts_slide = new Swiper('#shorts_slide',{
 })
 
 // play_slide
-const play_slide_t = new Swiper('#play_slide_t',{
-    slidesPerView: 5,
-    direction: 'horizontal',
-    spaceBetween: 10,
-})
+// const play_slide_t = new Swiper('#play_slide_t',{
+//     slidesPerView: 5,
+//     direction: 'horizontal',
+//     spaceBetween: 10,
+// })
+const tab_title = document.querySelectorAll('.tab_title a')
+const tab_contents = document.querySelectorAll('.list > ul > li')
+const moreBtn = document.querySelectorAll('.more')
+const contents = document.querySelectorAll('.list > ul')
 const play_slide = new Swiper('#play_slide',{
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     direction: 'horizontal',
     loop:true,
     spaceBetween: 10,
     slidesOffsetBefore: 10,
     slidesOffsetAfter: 10,
     centeredSlides:true,
+    breakpoints:{
+        360:{slidesPerView:1.5},
+        530:{slidesPerView:2},
+    },
+    on:{
+        init:function(){
+            // 슬라이드가 변경되기 전 초기 실행함수
+            // this = #play_slide
+            // this.slides = .swiper-slide
+            // this.activeIndex = 현재 활성화된 slide
+            
+            // this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
+            tab_title.forEach(function(t){
+                t.addEventListener('click', function(e){
+                    e.preventDefault()
+                    for(let i of tab_title){i.classList.remove('active')}
+                    t.classList.add('active')
+                })
+            })
+            moreBtn.forEach(function(target){
+                target.addEventListener('click',function(e){
+                    e.preventDefault()
+                    for(let j of moreBtn){j.style.display = 'none'}
+                    for(let j of contents){j.style.height = '378px'}
+                    for(let j of contents){j.style.overflow = 'auto'}
+                })
+            })
+        },
+        // slideChange:function(){
+        //     // 슬라이드 변경될 때 인식되는 실행함수
+        //     // 1. 활성화(가운데) 전 모든 슬라이드 opacity:0
+        //     this.slides.forEach(target => {
+        //         target.querySelector('.slide_txt').style.opacity = '0';
+        //         target.querySelector('.slide_txt').style.transform = 'translateX(40%)';
+        //     })
+        //     // 2. 활성화(가운데) 슬라이드 opacity:1
+        //     this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
+        //     this.slides[this.activeIndex].querySelector('.slide_txt').style.transform = 'translateX(0)';
+        // }
+        
+    },
 })
