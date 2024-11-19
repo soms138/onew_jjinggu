@@ -40,6 +40,7 @@ menuBtn.addEventListener('click',function(e){
         logo.style.display = 'none'
         menu.style.transform = 'translateX(0)';
         
+        
         boolean = false
     }else{
         this.firstElementChild.style.transform = 'none'

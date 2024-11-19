@@ -49,8 +49,8 @@ main .home .mv_wrap #mv_slide .swiper-wrapper .swiper-slide::after {
     content: '';
     display: block;
     position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 100%; z-index: 500;
+    left: 0; bottom: 0;
+    width: 100%; height: 40%; z-index: 500;
 }
 main .home .mv_wrap #mv_slide .swiper-wrapper .swiper-slide video {
     position: absolute;
@@ -66,17 +66,14 @@ main .home .mv_wrap #mv_slide .swiper-wrapper .slide1 {}
 main .home .mv_wrap #mv_slide .swiper-wrapper .slide2 {}
 main .home .mv_wrap #mv_slide .swiper-wrapper .slide3 {}
 main .home .mv_wrap #mv_slide .swiper-wrapper .slide4 {}
-main .home .mv_wrap #mv_slide .swiper-scrollbar {
+/* main .home .mv_wrap #mv_slide .swiper-scrollbar {
     background: rgba(243, 243, 243,0.35);
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: calc(800px - 80px / 2);
-    /* width: calc(100% - 80px / 2); */
-    /* max-width: 760px; */
-    /* min-width: 280px; */
-}
+} */
 main .home .mv_wrap #mv_slide .swiper-scrollbar-drag {background: #fff;}
 
 /* 2. album */
@@ -170,8 +167,8 @@ main #official_video .video_wrap #video_slide .swiper-wrapper .swiper-slide::aft
     content: '';
     display: block;
     position: absolute;
-    right: 0; bottom: 0;
-    width: 30%; height: 100%; z-index: 500;
+    right: 0; top: 0;
+    width: 30%; height: 90%; z-index: 500;
 }
 main #official_video .video_wrap #video_slide .swiper-wrapper .slide1 {}
 main #official_video .video_wrap #video_slide .swiper-wrapper .slide2 {}
@@ -210,9 +207,9 @@ main #shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide::after {
     content: '';
     display: block;
     position: absolute;
-    right: 0; bottom: 0;
+    right: 0; top: 0;
     width: 35%; 
-    height: 100%; 
+    height: 90%; 
     z-index: 500;
 }
 main #shorts .shorts_wrap #shorts_slide .swiper-wrapper .slide1 {}
@@ -271,7 +268,7 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list {
     align-items: center;
 }
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul {
-    overflow: hidden;
+    overflow-y: hidden;
     height: 224px;
     margin-bottom: 15px;
     width: 100%;
