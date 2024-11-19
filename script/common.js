@@ -2,7 +2,7 @@ const menu = document.querySelector('.nav_open')
 const menuBtn = document.querySelector('.m_nav')
 const header = document.querySelector('header')
 const logo = document.querySelector('.header_t h1 a')
-const album = document.querySelector('.album')
+const album = document.querySelector('#album')
 let boolean = true
 
 

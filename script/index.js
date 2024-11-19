@@ -13,7 +13,7 @@ const album_slide = new Swiper('#album_slide',{
     init: true,
     initialSlide: 0,
     loopedSlides: 3,
-    slidesPerView: 1.5,
+    slidesPerView: 'auto',
     direction: 'horizontal',
     loop:true,
     spaceBetween: 10,
@@ -40,7 +40,7 @@ const official_slide = new Swiper('#video_slide',{
 
 // shorts_slide
 const shorts_slide = new Swiper('#shorts_slide',{
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     centeredSlides:true,
     direction: 'horizontal',
     loop:true,
@@ -48,31 +48,28 @@ const shorts_slide = new Swiper('#shorts_slide',{
     spaceBetween: 10,
     slidesOffsetAfter: 10,
     breakpoints:{
-        345:{slidesPerView:1.5,
-            centeredSlides:false,},
-        450:{slidesPerView:2,
-            centeredSlides:true,},
-        590:{slidesPerView:2.5,
-            centeredSlides:false,},
-        700:{slidesPerView:3,
-            centeredSlides:true,},
-        750:{slidesPerView:3.5,
-            centeredSlides:false,},
+        345:{centeredSlides:false,},
+        450:{centeredSlides:true,},
+        590:{centeredSlides:false,},
+        700:{centeredSlides:true,},
+        750:{centeredSlides:false,},
     }
 })
 
 // play_slide
-// const play_slide_t = new Swiper('#play_slide_t',{
-//     slidesPerView: 5,
-//     direction: 'horizontal',
-//     spaceBetween: 10,
-// })
-const tab_title = document.querySelectorAll('.tab_title a')
-const tab_contents = document.querySelectorAll('.list > ul > li')
+const play_tab = new Swiper('#play_tab',{
+    slidesPerView: 'auto',
+    direction: 'horizontal',
+    spaceBetween: 10,
+    slidesOffsetAfter: 10,
+    freeMode : false,
+})
+const tab_title = document.querySelectorAll('.tab_title div > a')
+const tab_contents = document.querySelectorAll('.list')
 const moreBtn = document.querySelectorAll('.more')
 const contents = document.querySelectorAll('.list > ul')
 const play_slide = new Swiper('#play_slide',{
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     direction: 'horizontal',
     loop:true,
     spaceBetween: 10,
@@ -91,11 +88,12 @@ const play_slide = new Swiper('#play_slide',{
             // this.activeIndex = 현재 활성화된 slide
             
             // this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
-            tab_title.forEach(function(t){
+            tab_title.forEach(function(t,i){
                 t.addEventListener('click', function(e){
                     e.preventDefault()
                     for(let i of tab_title){i.classList.remove('active')}
                     t.classList.add('active')
+                    // tab_contents[i].
                 })
             })
             moreBtn.forEach(function(target){
@@ -107,6 +105,14 @@ const play_slide = new Swiper('#play_slide',{
                 })
             })
         },
+        // slideChange:function(){
+        //     // 슬라이드 변경될 때 인식되는 실행함수
+        //     // 1. 활성화(가운데) 전 모든 슬라이드 opacity:0
+        //     this.slides[this.activeIndex].querySelector('.tab_title').classList.add = 'active';
+        // }
+
+
+        
         // slideChange:function(){
         //     // 슬라이드 변경될 때 인식되는 실행함수
         //     // 1. 활성화(가운데) 전 모든 슬라이드 opacity:0
