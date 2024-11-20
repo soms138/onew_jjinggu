@@ -122,7 +122,6 @@ const play_slide = new Swiper('#play_slide',{
     breakpoints:{
         320:{slidesPerView:1},
         370:{slidesPerView:1.5},
-        530:{slidesPerView:2},
     },
     thumbs: {
         swiper: play_tab
@@ -222,8 +221,7 @@ const play_slide = new Swiper('#play_slide',{
 //     });
 // })
 $(function() {
-    var audio1 = new Audio();
-    audio1.src = './audio/shinee_lovelikeoxygen.mp3';
+    var audio1 = new Audio('./audio/shinee_lovelikeoxygen.mp3');
     var audio_state = 0;
     lovelikeoxygen[0].addEventListener("click",function(e){
         e.preventDefault()

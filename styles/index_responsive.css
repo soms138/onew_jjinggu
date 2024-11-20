@@ -1,7 +1,7 @@
 /* @media screen and (max-width:470px){
     .shorts_wrap {padding: 0 20px;}
 } */
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
     .swiper-scrollbar {width: calc(100% - 80px / 2) !important;}
 }
 @media screen and (max-width:730px){
@@ -21,7 +21,7 @@
 }
 @media screen and (max-width:530px){
     main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt {width: calc(250px - 20px);}
-}
+} */
 @media screen and (max-width:500px){
     main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt {width: calc(230px - 20px);}
 }

@@ -15,7 +15,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 
 header, footer {
-    max-width: 800px;
+    max-width: 500px;
     /* min-width: 320px; */
     margin: 0 auto;
 }
@@ -23,19 +23,19 @@ header, footer {
 /* left right */
 .leftBox, .rightBox {
     position: fixed;
-    width: calc((100% - 800px) / 2);
+    width: calc((100% - 500px) / 2);
     height: 100vh;
     top: 0;
     z-index: 990;
 }
 .leftBox {
     background: #fff no-repeat top right / cover;
-    right: calc(50% + 400px);
+    right: calc(50% + 250px);
     left: 0;
 }
 .rightBox {
     background: #fff no-repeat top left / cover;
-    left: calc(50% + 400px);
+    left: calc(50% + 250px);
     right: 0;
 }
 
@@ -43,7 +43,7 @@ header, footer {
 #popup {
     width: 45px; height: 45px;
     position: fixed;
-    bottom: 20px; right: 20px;
+    bottom: 20px; right: 70px;
     z-index: 800;
 }
 #popup a {}

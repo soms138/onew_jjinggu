@@ -4,7 +4,7 @@ main {
     position: relative;
 }
 main .section {
-    max-width: 800px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto 35px;
 }
@@ -302,7 +302,7 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_le
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt {
     display: flex;
     flex-flow: column nowrap;
-    width: calc(270px - 20px);
+    width: calc(240px - 20px);
 }
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt em {
     /* display: block; */
