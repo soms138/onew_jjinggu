@@ -143,9 +143,10 @@ header .nav_open .nav_wrap li .close span:nth-child(2) {
 header .nav_open .nav_wrap li a {
     display: block;
     padding: 15px 0;
-    font-size: 2rem;
+    font-size: 1.875rem;
     color: #fff;
     font-weight: 600;
+    letter-spacing: -0.07rem;
 }
 header .sns {
     padding: 20px 0;
