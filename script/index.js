@@ -178,8 +178,52 @@ const play_slide = new Swiper('#play_slide',{
 
 
 // shinee 앨범
+// $(function() {
+//     var audio1 = new Audio('./audio/shinee_lovelikeoxygen.mp3');
+//     var audio_state = 0;
+//     lovelikeoxygen[0].addEventListener("click",function(e){
+//         e.preventDefault()
+//         if(audio_state == 0){
+//             audio1.loop = true;//반복재생
+//             audio1.volume = 0.5;// 음량 설정
+//             audio1.currentTime=0;//처음부터 재생
+//             audio1.play();// mp3 재생
+//             audio_state = 1;
+//         }else if(audio_state == 1){
+//             audio1.pause();
+//             audio_state = 0;
+//         }
+//     });
+//     lovelikeoxygen[1].addEventListener("click",function(e){
+//         e.preventDefault()
+//         if(audio_state == 0){
+//             audio1.loop = true;//반복재생
+//             audio1.volume = 0.5;// 음량 설정
+//             audio1.currentTime=0;//처음부터 재생
+//             audio1.play();// mp3 재생
+//             audio_state = 1;
+//         }else if(audio_state == 1){
+//             audio1.pause();
+//             audio_state = 0;
+//         }
+//     });
+//     lovelikeoxygen[2].addEventListener("click",function(e){
+//         e.preventDefault()
+//         if(audio_state == 0){
+//             audio1.loop = true;//반복재생
+//             audio1.volume = 0.5;// 음량 설정
+//             audio1.currentTime=0;//처음부터 재생
+//             audio1.play();// mp3 재생
+//             audio_state = 1;
+//         }else if(audio_state == 1){
+//             audio1.pause();
+//             audio_state = 0;
+//         }
+//     });
+// })
 $(function() {
-    var audio1 = new Audio('./audio/shinee_lovelikeoxygen.mp3');
+    var audio1 = new Audio();
+    audio1.src = './audio/shinee_lovelikeoxygen.mp3';
     var audio_state = 0;
     lovelikeoxygen[0].addEventListener("click",function(e){
         e.preventDefault()
