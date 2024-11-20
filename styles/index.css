@@ -14,7 +14,7 @@ main .section {
     color: #222;
     font-weight: 600;
     font-size: 1.75rem;
-    letter-spacing: -0.02rem;
+    letter-spacing: -0.07rem;
 }
 
 #album h2, #play_list h2 {margin-bottom: 15px;}
@@ -194,9 +194,7 @@ main #shorts .shorts_t a {color: #aaa; display: inline-block;}
 main #shorts .swiper_container {}
 main #shorts .shorts_wrap {}
 main #shorts .shorts_wrap #shorts_slide {}
-main #shorts .shorts_wrap #shorts_slide .swiper-wrapper {
-    transform: translate3d(-580px, 0px, 0px) !important;
-}
+main #shorts .shorts_wrap #shorts_slide .swiper-wrapper {}
 main #shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: center;
