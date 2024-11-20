@@ -104,8 +104,8 @@ const play_tab = new Swiper('#play_tab',{
     spaceBetween: 10,
     slidesOffsetAfter: 20,
     freeMode : false,
-    // watchSlidesProgress: true
-
+    watchSlidesProgress: true,
+    slideToClickedSlide: true,
 })
 const tab_title = document.querySelectorAll('.tab_title div > a')
 const tab_contents = document.querySelectorAll('.list')
@@ -123,6 +123,7 @@ const play_slide = new Swiper('#play_slide',{
         320:{slidesPerView:1},
         370:{slidesPerView:1.5},
     },
+    allowTouchMove: false,
     thumbs: {
         swiper: play_tab
     },
@@ -151,26 +152,6 @@ const play_slide = new Swiper('#play_slide',{
                 })
             })
         },
-        // slideChange:function(){
-        //     // 슬라이드 변경될 때 인식되는 실행함수
-        //     // 1. 활성화(가운데) 전 모든 슬라이드 opacity:0
-        //     this.slides[this.activeIndex].querySelector('.tab_title').classList.add = 'active';
-        // }
-
-
-        
-        // slideChange:function(){
-        //     // 슬라이드 변경될 때 인식되는 실행함수
-        //     // 1. 활성화(가운데) 전 모든 슬라이드 opacity:0
-        //     this.slides.forEach(target => {
-        //         target.querySelector('.slide_txt').style.opacity = '0';
-        //         target.querySelector('.slide_txt').style.transform = 'translateX(40%)';
-        //     })
-        //     // 2. 활성화(가운데) 슬라이드 opacity:1
-        //     this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
-        //     this.slides[this.activeIndex].querySelector('.slide_txt').style.transform = 'translateX(0)';
-        // }
-        
     },
 })
 
