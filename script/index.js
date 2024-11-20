@@ -112,17 +112,18 @@ const tab_contents = document.querySelectorAll('.list')
 const moreBtn = document.querySelectorAll('.more')
 const contents = document.querySelectorAll('.list > ul')
 const play_slide = new Swiper('#play_slide',{
-    slidesPerView: 'auto',
+    slidesPerView: 1,
+    // slidesPerView: 'auto',
     direction: 'horizontal',
     loop:true,
     spaceBetween: 10,
-    slidesOffsetBefore: 10,
-    slidesOffsetAfter: 10,
-    centeredSlides:true,
-    breakpoints:{
-        320:{slidesPerView:1},
-        370:{slidesPerView:1.5},
-    },
+    slidesOffsetBefore: 20,
+    // slidesOffsetAfter: 10,
+    // centeredSlides:true,
+    // breakpoints:{
+    //     320:{slidesPerView:1},
+    //     370:{slidesPerView:1.5},
+    // },
     allowTouchMove: false,
     thumbs: {
         swiper: play_tab
