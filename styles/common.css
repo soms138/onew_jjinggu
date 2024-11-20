@@ -43,7 +43,7 @@ header, footer {
 #popup {
     width: 45px; height: 45px;
     position: fixed;
-    bottom: 20px; right: 70px;
+    bottom: 20px; right: 20px;
     z-index: 800;
 }
 #popup a {}
