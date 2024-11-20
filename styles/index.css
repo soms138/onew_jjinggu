@@ -194,14 +194,15 @@ main #shorts .shorts_t a {color: #aaa; display: inline-block;}
 main #shorts .swiper_container {}
 main #shorts .shorts_wrap {}
 main #shorts .shorts_wrap #shorts_slide {}
-main #shorts .shorts_wrap #shorts_slide .swiper-wrapper {}
+main #shorts .shorts_wrap #shorts_slide .swiper-wrapper {
+    transform: translate3d(-580px, 0px, 0px) !important;
+}
 main #shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 221px;
-    min-width: 148px;
-    height: 380px;
+    width: 280px;
+    height: 470px;
 }
 main #shorts .shorts_wrap #shorts_slide .swiper-wrapper .swiper-slide::after {
     content: '';
@@ -243,6 +244,7 @@ main #play_list .play_container .tab_title .swiper-slide a {
     object-fit: cover;
     white-space: nowrap;
 }
+main #play_list .play_container .tab_title .swiper-slide:nth-last-child(1) a {margin-right: 20px;}
 main #play_list .play_container .tab_title div .active {
     background: #9FC1E4;
     color: #fff;
@@ -273,9 +275,7 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list ul {
     margin-bottom: 15px;
     width: 100%;
 }
-main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li {
-    min-width: 290px;
-}
+main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li {}
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a {
     background-color: rgb(159, 193, 228, 10%);
     border-radius: 5px;
@@ -284,7 +284,6 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-width: 290px;
     margin-bottom: 7px;
 }
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li:nth-last-child(1) a {margin-bottom: 0;}
@@ -305,6 +304,7 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_le
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt {
     display: flex;
     flex-flow: column nowrap;
+    width: calc(270px - 20px);
 }
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_left .play_txt em {
     /* display: block; */
@@ -325,7 +325,6 @@ main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_le
     white-space: nowrap;
     line-height: 1.125rem;
     color: #728aa2;
-    /* width: calc(170px - 20px); */
 }
 main #play_list .tab_contents #play_slide .swiper-wrapper .list ul li a .play_right {
     display: block;

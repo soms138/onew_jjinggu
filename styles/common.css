@@ -111,11 +111,34 @@ header .nav_open {
     align-items: flex-start;
     justify-content: space-between;
 }
-header .nav_open .nav_wrap {}
-header .nav_open .nav_wrap li:nth-child(1) {margin: 20px 0 20px;}
+header .nav_open .nav_wrap {width: 100%;}
+header .nav_open .nav_wrap li:nth-child(1) {
+    margin: 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
 header .nav_open .nav_wrap li img {
     width: 30px;
     height: 30px;
+}
+header .nav_open .nav_wrap li .close {
+    width: 30px; height: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    z-index: 900;
+    cursor: pointer;
+}
+header .nav_open .nav_wrap li .close span {
+    width: 100%; height: 3px;
+    border-radius: 1.5px;
+    background: #fff;
+}
+header .nav_open .nav_wrap li .close span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+header .nav_open .nav_wrap li .close span:nth-child(2) {
+    transform: translateY(-11px) rotate(-45deg);
 }
 header .nav_open .nav_wrap li a {
     display: block;
@@ -151,7 +174,7 @@ header .sns a::after {
     border-radius: 50%;
     background: rgb(141, 201, 207,0.45);
     /* background: rgba(159, 193, 228, 0.5); */
-    filter: brightness(110%) saturate(100%) sepia(10%); 
+    filter: brightness(112%) saturate(100%) sepia(10%); 
 }
 header .sns a img {
     width: 30px;
